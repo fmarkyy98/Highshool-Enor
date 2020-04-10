@@ -6,7 +6,7 @@
 CompetitorEnumerator::CompetitorEnumerator(const std::string& filename)
 {
 	this->_ifs.open(filename);
-	if (_ifs.fail()) throw NoSuchFileExistsException;
+	if (this->_ifs.fail()) throw NoSuchFileExistsException;
 }
 void CompetitorEnumerator::first()
 {
@@ -15,10 +15,11 @@ void CompetitorEnumerator::first()
 void CompetitorEnumerator::next()
 {
 	std::string line;
-	getline(_ifs, line);
-	if (!(_end = _ifs.fail()))
+	getline(this->_ifs, line);
+	if (!(this->_end = this->_ifs.fail()))
 	{
 		std::string transfer[2];
+		std::string garbage;
 		std::stringstream nameSs;
 		std::istringstream iss(line);
 		iss >> transfer[0] >> transfer[1];
@@ -38,10 +39,10 @@ void CompetitorEnumerator::next()
 			nameSs << " " << transfer[0];
 		}
 		this->_cur.name = nameSs.str();
-		iss >> transfer[0];
+		iss >> this->_cur.schoolID;
 		int placement;
 		this->_cur.score = 0;
-		for (iss >> transfer[0] >> placement; !iss.fail(); iss >> transfer[0] >> placement) {
+		for (iss >> garbage >> placement; !iss.fail(); iss >> transfer[0] >> placement) {
 			this->_cur.score += placement < 8 ? (7 - placement) * 2 : 0;
 		}
 	}

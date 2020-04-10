@@ -10,6 +10,7 @@ enum Exception
 struct Competitor
 {
 	std::string name;
+	std::string schoolID;
 	int score;
 };
 

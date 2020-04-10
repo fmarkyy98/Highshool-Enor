@@ -149,9 +149,11 @@
   <ItemGroup>
     <ClCompile Include="Competitor.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="School.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Competitor.h" />
+    <ClInclude Include="School.h" />
     <ClInclude Include="Test\src\catch.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
