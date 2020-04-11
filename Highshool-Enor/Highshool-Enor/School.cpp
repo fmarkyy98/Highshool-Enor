@@ -3,22 +3,22 @@
 #include <fstream>
 #include "School.h"
 
-SchoolEnumerator::SchoolEnumerator(const std::string& filename) : _competitorEnumerator(filename) { }
+SchoolEnumerator::SchoolEnumerator(const std::string& filename) : _compEnor(filename) { }
 
 void SchoolEnumerator::first()
 {
-	this->_competitorEnumerator.first();
+	this->_compEnor.first();
 	this->next();
 }
 void SchoolEnumerator::next()
 {
-	if (!(this->_end = this->_competitorEnumerator.end()))
+	if (!(this->_end = this->_compEnor.end()))
 	{
-		this->_cur.schoolID = this->_competitorEnumerator.current().schoolID;
+		this->_cur.schoolID = this->_compEnor.current().schoolID;
 		this->_cur.score = 0;
-		while (!this->_competitorEnumerator.end() && this->_competitorEnumerator.current().schoolID == this->_cur.schoolID) {
-			this->_cur.score += this->_competitorEnumerator.current().score;
-			this->_competitorEnumerator.next();
+		while (!this->_compEnor.end() && this->_compEnor.current().schoolID == this->_cur.schoolID) {
+			this->_cur.score += this->_compEnor.current().score;
+			this->_compEnor.next();
 		}
 	}
 }

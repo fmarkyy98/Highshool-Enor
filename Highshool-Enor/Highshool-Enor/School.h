@@ -17,7 +17,7 @@ struct School
 class SchoolEnumerator
 {
 private:
-	CompetitorEnumerator _competitorEnumerator;
+	CompetitorEnumerator _compEnor;
 	School _cur;
 	bool _end;
 public:

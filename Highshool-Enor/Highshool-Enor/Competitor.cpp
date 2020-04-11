@@ -42,8 +42,11 @@ void CompetitorEnumerator::next()
 		iss >> this->_cur.schoolID;
 		int placement;
 		this->_cur.score = 0;
-		for (iss >> garbage >> placement; !iss.fail(); iss >> transfer[0] >> placement) {
-			this->_cur.score += placement < 8 ? (7 - placement) * 2 : 0;
+		iss >> garbage >> placement;
+		while (!iss.fail())
+		{
+			this->_cur.score += 0 < placement && placement < 7 ? (7 - placement) * 2 : 0;
+			iss >> transfer[0] >> placement;
 		}
 	}
 }

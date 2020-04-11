@@ -5,6 +5,30 @@ VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Highshool-Enor", "Highshool-Enor\Highshool-Enor.vcxproj", "{325E970A-8619-42B6-BD8A-F62CAAF9EB04}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{820AFD95-02FD-4764-AE20-DD05D59C892E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlackBox", "BlackBox", "{05F931E2-386B-4984-822B-C38FAB02E112}"
+	ProjectSection(SolutionItems) = preProject
+		Highshool-Enor\Test\BlackBox\t01_empty.txt = Highshool-Enor\Test\BlackBox\t01_empty.txt
+		Highshool-Enor\Test\BlackBox\t02_1line_2namePart_1sport_0score.txt = Highshool-Enor\Test\BlackBox\t02_1line_2namePart_1sport_0score.txt
+		Highshool-Enor\Test\BlackBox\t03_1line_2namePart_1sport.txt = Highshool-Enor\Test\BlackBox\t03_1line_2namePart_1sport.txt
+		Highshool-Enor\Test\BlackBox\t04a_1line_2namePart_1+spoert.txt = Highshool-Enor\Test\BlackBox\t04a_1line_2namePart_1+spoert.txt
+		Highshool-Enor\Test\BlackBox\t04b_1line_2+namePart_1sport.txt = Highshool-Enor\Test\BlackBox\t04b_1line_2+namePart_1sport.txt
+		Highshool-Enor\Test\BlackBox\t05_t03_o_t04a_o_t04b.txt = Highshool-Enor\Test\BlackBox\t05_t03_o_t04a_o_t04b.txt
+		Highshool-Enor\Test\BlackBox\t06_combinated_multipleShool.txt = Highshool-Enor\Test\BlackBox\t06_combinated_multipleShool.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{38ACF18F-10CE-45DF-B0D2-327F5F61B1F4}"
+	ProjectSection(SolutionItems) = preProject
+		Highshool-Enor\Test\input.txt = Highshool-Enor\Test\input.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WhiteBox", "WhiteBox", "{8D5F976F-2FE1-4259-AC3E-34EEC1E45A71}"
+	ProjectSection(SolutionItems) = preProject
+		Highshool-Enor\Test\WhiteBox\t07_uglyWhile.txt = Highshool-Enor\Test\WhiteBox\t07_uglyWhile.txt
+		Highshool-Enor\Test\WhiteBox\t08_scoreCalculation_CriticalValues.txt = Highshool-Enor\Test\WhiteBox\t08_scoreCalculation_CriticalValues.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -24,6 +48,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{05F931E2-386B-4984-822B-C38FAB02E112} = {38ACF18F-10CE-45DF-B0D2-327F5F61B1F4}
+		{38ACF18F-10CE-45DF-B0D2-327F5F61B1F4} = {820AFD95-02FD-4764-AE20-DD05D59C892E}
+		{8D5F976F-2FE1-4259-AC3E-34EEC1E45A71} = {38ACF18F-10CE-45DF-B0D2-327F5F61B1F4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BE0D5E7D-9551-41F2-9AC0-CDE2E4EF3B63}

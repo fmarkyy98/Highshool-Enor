@@ -1,0 +1,4 @@
+Nagyon Ügyes Péter 1063Szinyei futás100 3 melluszás500 1 magasugrás 1
+A B C D Sándor 2144Kerepes futás100 1 melluszás500 2 magasugrás 1
+Valamilyen János 3021GáborDénes futás100 2 melluszás500 3 magasugrás 1 vívás 4
+Ilyenolyan Géza 3021GáborDénes futás100 4 melluszás500 5 magasugrás 4 vívás 1
