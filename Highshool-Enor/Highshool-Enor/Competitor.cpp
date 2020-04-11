@@ -24,16 +24,7 @@ void CompetitorEnumerator::next()
 		std::istringstream iss(line);
 		iss >> transfer[0] >> transfer[1];
 		nameSs << transfer[0] << " " << transfer[1];
-		while (
-			iss.str()[nameSs.str().length() + 1] != '1' &&
-			iss.str()[nameSs.str().length() + 1] != '2' &&
-			iss.str()[nameSs.str().length() + 1] != '3' &&
-			iss.str()[nameSs.str().length() + 1] != '4' &&
-			iss.str()[nameSs.str().length() + 1] != '5' &&
-			iss.str()[nameSs.str().length() + 1] != '6' &&
-			iss.str()[nameSs.str().length() + 1] != '7' &&
-			iss.str()[nameSs.str().length() + 1] != '8' &&
-			iss.str()[nameSs.str().length() + 1] != '9')
+		while (iss.str()[nameSs.str().length() + 1] < 49 || 57 < iss.str()[nameSs.str().length() + 1])
 		{
 			iss >> transfer[0];
 			nameSs << " " << transfer[0];
